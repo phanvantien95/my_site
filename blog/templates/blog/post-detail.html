@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    This Post Title
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}"/>
+    <link rel="stylesheet" href="{% static "blog/index.css" %}"/>
+{% endblock %}
+
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static 'blog/images/mountains.jpg' %}" alt="Post Title">
+            <address>By Tien Phan</address>
+            <div>
+                Last updated on
+                <time>July 10th</time>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam maiores ad hic corrupti accusamus
+            necessitatibus, quidem similique numquam nemo ipsa qui nulla officiis tenetur a, perferendis odit
+            praesentium nesciunt voluptates!
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam maiores ad hic corrupti accusamus
+            necessitatibus, quidem similique numquam nemo ipsa qui nulla officiis tenetur a, perferendis odit
+            praesentium nesciunt voluptates!
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam maiores ad hic corrupti accusamus
+            necessitatibus, quidem similique numquam nemo ipsa qui nulla officiis tenetur a, perferendis odit
+            praesentium nesciunt voluptates!
+        </p>
+    </main>
+{% endblock %}
